@@ -27,4 +27,5 @@ jobs:
 
       - name: Deploy application to k3s
         run: |
-          kubectl apply -f k8s/nginx.yaml
+          kubectl apply -f k8s/nginx.yaml --validate=false
+
